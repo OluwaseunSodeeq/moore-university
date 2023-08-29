@@ -1,0 +1,16 @@
+.miniNav {
+  /* width: 100%; */
+  padding: 16px 0px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.miniNav li,
+.miniNav li:first-child {
+  color: #3f3f3f;
+  font-weight: 500;
+  font-size: 20px;
+}
+.miniNav li:hover {
+  border-bottom: 3cap solid #3f3f3f;
+}

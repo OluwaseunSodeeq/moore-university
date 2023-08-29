@@ -1,0 +1,22 @@
+.seacrchDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f7eeee;
+  /* border: 1px solid red; */
+}
+svg {
+  width: 50px;
+  padding: 0px;
+}
+.bi-search {
+  font-weight: 900;
+  width: 90%;
+}
+input {
+  display: none;
+}
+label {
+  margin-top: -5px;
+  font-size: 17px;
+}

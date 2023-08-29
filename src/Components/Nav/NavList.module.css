@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  color: #f7eeee;
+  gap: 24px;
+  /* margin-left: 290px; */
+}
+ul li {
+  font-weight: normal;
+}
+ul li:first-child {
+  font-weight: 600;
+}
