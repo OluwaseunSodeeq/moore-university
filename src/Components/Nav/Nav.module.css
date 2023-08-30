@@ -7,18 +7,14 @@
 }
 .navLeft {
   display: flex;
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  /* border: 1px solid #fff; */
   gap: 20px;
   padding: 0px;
 }
 .containerNav {
-  max-width: 1440px;
+  /* max-width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5%;
   margin: 0 auto;
   /* border: 1px solid #fff; */
 }

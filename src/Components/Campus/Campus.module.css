@@ -1,0 +1,20 @@
+.currentContainer {
+  text-align: center;
+}
+.currentContainer > div {
+  text-decoration: none;
+}
+
+h1 {
+  color: #1f1f1f;
+}
+p {
+  color: #3f3f3f;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}

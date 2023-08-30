@@ -1,0 +1,13 @@
+.currentContainer {
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+}
+p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}

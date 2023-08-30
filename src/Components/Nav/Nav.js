@@ -1,3 +1,4 @@
+import Card from "../Ui/Card";
 import Logo from "./Logo";
 import classes from "./Nav.module.css";
 import NavList from "./NavList";
@@ -16,13 +17,13 @@ const Nav = () => {
 
   return (
     <nav className={classes.navFlex}>
-      <div className={classes.containerNav}>
+      <Card classes={classes.containerNav}>
         <Logo />
         <div className={classes.navLeft}>
           <NavList listArray={navList} />
           <Search />
         </div>
-      </div>
+      </Card>
     </nav>
   );
 };
