@@ -1,4 +1,6 @@
 .currentContainer {
+  max-width: 674px;
+  margin: 0 auto;
   text-align: center;
 }
 h1 {

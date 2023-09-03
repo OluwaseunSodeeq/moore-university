@@ -5,3 +5,10 @@
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
+/* *,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+} */

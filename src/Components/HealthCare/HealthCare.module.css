@@ -1,0 +1,52 @@
+.healthCare {
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+}
+.heathCareHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 15px;
+}
+.healthCareleft {
+  max-width: 632px;
+  height: 632px;
+  /* flex-shrink: 0; */
+}
+.healthCareleft img {
+  width: 100%;
+}
+.healthCareright {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.heathCard {
+  margin-top: 25px;
+  padding: 12px 100px 12px 12px;
+  background-color: #fcfbf7;
+  text-align: start;
+}
+.heathCard h4 {
+  color: #393429;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.heathCard h6 {
+  color: #3f3f3f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  /* text-decoration-line: underline; */
+}
+.heathCard p {
+  color: #7f2a2a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.heathCard {
+  padding-left: 16px 12px;
+}

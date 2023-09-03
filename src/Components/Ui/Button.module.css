@@ -1,0 +1,11 @@
+.mainButton {
+  padding: 16px;
+  background-color: #7f2a2a;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+}
+
+.minButton {
+  background-color: #fff;
+}

@@ -1,6 +1,9 @@
 .card {
+  border: none;
+}
+.wrapper {
   max-width: 1440px;
   padding: 0px 5%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   /* border: 1px solid #fff; */
 }

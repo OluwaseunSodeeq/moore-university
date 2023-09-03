@@ -1,5 +1,6 @@
 .currentContainer {
   text-align: center;
+  padding-bottom: 20px;
 }
 .currentContainer > div {
   text-decoration: none;

@@ -1,0 +1,97 @@
+.academics {
+  border: none;
+  position: relative;
+}
+
+.academicsCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+
+.academicsCard {
+  border-radius: 7px;
+  width: 410px;
+  background-color: #fcfbf7;
+  padding-bottom: 20px;
+  /* max-width: 410px; */
+}
+.academicsCard img {
+  width: 100%;
+}
+.academicsCard h4 {
+  color: #393429;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 16px;
+}
+.academicsCard h6 {
+  color: #3f3f3f;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.academics > p {
+  color: #1f1f1f;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 50px auto 0px;
+  text-align: center;
+}
+.academicsCard > p {
+  display: inline;
+  color: #7f2a2a;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.academicsHero {
+  position: relative;
+  margin: 50px 30px auto;
+  text-align: center;
+}
+.academicsHero img {
+  width: 100%;
+}
+.academicsHero > div {
+  position: absolute;
+  max-width: 500px;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  /* margin: 0 auto; */
+}
+.academicsHeroDiv {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  /* left: 35%; */
+  /* margin: 0 auto; */
+  border: 2px solid red;
+}
+/* .academicsHeroDiv > button { */
+.btn {
+  padding: 12px 16px;
+  color: #3f3f3f;
+  background-color: #f6f6f6;
+  font-weight: 400px;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+}

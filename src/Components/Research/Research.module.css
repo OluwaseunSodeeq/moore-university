@@ -1,0 +1,20 @@
+.research {
+  text-align: center;
+}
+
+.dataArr {
+  display: flex;
+  gap: 50;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin-bottom: 40px;
+}
+.dataArr p {
+  font-size: 14px;
+}
+.researchCard {
+  width: 250px;
+  padding: 0px;
+  margin: 0px;
+}

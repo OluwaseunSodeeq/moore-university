@@ -1,0 +1,89 @@
+.events {
+  text-align: center;
+}
+.eventCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  /* column-gap: 100px; */
+}
+.eventCards li {
+  width: 450px;
+  text-align: start;
+}
+.event {
+  padding: 25px 16px 25px 16px;
+  /* border: 1px solid red;  */
+}
+.event h4,
+.event h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.event h4 {
+  color: #7f2a2a;
+}
+.event h6 {
+  color: #1f1f1f;
+}
+.event p {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.eventCards li:first-child,
+.eventCards li:last-child {
+  width: 648px;
+}
+.imgDiv {
+  height: 230px;
+  width: 100%;
+}
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+}
+.eventCard {
+  position: relative;
+}
+.dateDiv {
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #f8f3e8;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* vertical-align: ; */
+}
+.dateDiv p {
+  width: 40%;
+  height: 40%;
+  color: #393429;
+  font-size: 16px;
+  font-weight: 500;
+}
+.dateDiv span {
+  width: 50%;
+  height: 50%;
+  color: #393429;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.EventLastImg {
+  width: 100%;
+  height: 650px;
+  margin-top: 30px;
+}
+.EventLastImg img {
+  width: 100%;
+}
