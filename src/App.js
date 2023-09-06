@@ -7,6 +7,10 @@ import Academics from "./Components/Academics/Academics";
 import Research from "./Components/Research/Research";
 import HealthCare from "./Components/HealthCare/HealthCare";
 import Events from "./Components/Events/Events";
+import CampusLife from "./Components/CampusLife/CampusLife";
+import Athletics from "./Components/Athletics/Athletics";
+import AdmissionSection from "./Components/AdmissionSection/AdmissionSection";
+import Prefooter from "./Components/Footer/Prefooter";
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
       <Research />
       <HealthCare />
       <Events />
+      <CampusLife />
+      <Athletics />
+      <AdmissionSection />
+      <Prefooter />
     </div>
   );
 }

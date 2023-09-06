@@ -1,0 +1,43 @@
+.admissionSection {
+  text-align: center;
+  margin-top: 100px;
+}
+.admissionContent {
+  width: 100%;
+}
+.imgDiv {
+  width: 100%;
+  /* height: 520px; */
+  height: 320px;
+}
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+}
+.contentDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 30px;
+}
+.contentDiv div {
+  width: 620px;
+  pad: 0 20px;
+}
+.contentDiv h6 {
+  color: #1f1f1f;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.contentDiv p {
+  color: #3f3f3f;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
