@@ -3,7 +3,8 @@
 }
 .wrapper {
   max-width: 1440px;
-  padding: 0px 5%;
+  /* padding: 0px 5%; */
+  padding: 0px 3%;
   margin: 0 auto 20px;
   /* border: 1px solid #fff; */
 }

@@ -13,10 +13,13 @@ svg {
   font-weight: 900;
   width: 90%;
 }
-input {
+/* input {
   display: none;
-}
+} */
 label {
-  margin-top: -5px;
+  /* margin-top: -5px; */
   font-size: 17px;
+}
+.searchBAr {
+  color: #000;
 }

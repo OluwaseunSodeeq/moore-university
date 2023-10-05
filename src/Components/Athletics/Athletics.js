@@ -1,4 +1,4 @@
-import CardOne from "../CardOne";
+import CardOne from "../Ui/CardOne";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./Athletics.module.css";
@@ -6,28 +6,28 @@ import styles from "./Athletics.module.css";
 const Athletics = () => {
   const data = [
     {
-      img: "images/Admission.png",
+      img: "images/athletics1.png",
       title: "Student Life",
       message:
         "Experience an unparalleled campus life at our institution, where vibrant activities, diverse communities, and unforgettable memories await you throughout your academic journey",
       linkMsg: "Student affairs",
     },
     {
-      img: "images/Admission.png",
+      img: "images/athletics2.png",
       title: "Art & Culture",
       message:
         "A rich tradition of fostering creativity and a vibrate arts districts on campus.",
       linkMsg: "Student affairs",
     },
     {
-      img: "images/Admission.png",
+      img: "images/athletics3.png",
       title: "Recreation and Wellness",
       message:
         "State-of-the-art facilities and fitness programs to encourage movement and play",
       linkMsg: "Student affairs",
     },
     {
-      img: "images/Admission.png",
+      img: "images/athletics4.png",
       title: "Art & Culture",
       message:
         "A rich tradition of fostering creativity and a vibrate arts districts on campus.",

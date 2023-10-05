@@ -4,6 +4,7 @@
   /* display: flex;
     justify-content: space-between;
     align-items: center; */
-  /* max-width: 1440px; */
-  padding: 12px 72px;
+  max-width: 1440px;
+  padding: 12px 0px;
+  /* padding: 12px 72px; */
 }

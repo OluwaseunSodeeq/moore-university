@@ -6,7 +6,7 @@ const HealthCare = () => {
   const title = "Health Care";
   const message =
     "Advancing human health through renovation research, education and care";
-  const img = "images/Admission.png";
+  const img = "images/HealthCare-Bg.png";
   const healthCaredata = [
     {
       tittle: "Ocean’s Children's Health",

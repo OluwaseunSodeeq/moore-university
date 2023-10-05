@@ -1,6 +1,6 @@
 import NavList from "../Nav/NavList";
 import styles from "./MiniNav.module.css";
-const MiniNav = () => {
+const MiniNav = ({ open, handler }) => {
   const miniNavList = [
     "News",
     "Events",
@@ -12,8 +12,8 @@ const MiniNav = () => {
     "About",
   ];
   return (
-    <div className={styles.miniNav}>
-      <NavList listArray={miniNavList} />
+    <div className={`${open ? styles.miniNavHide : styles.miniNavShow}`}>
+      <NavList listArray={miniNavList} handler={handler} />
     </div>
   );
 };

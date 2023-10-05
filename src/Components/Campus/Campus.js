@@ -6,7 +6,7 @@ import CampusCard from "./CampusCard";
 
 const Campus = () => {
   const data = {
-    title: "Campus",
+    title: "Campus News",
     message: "Stories about people, research, and innovation across the farm",
   };
   const buttonStyle = "mainButton";

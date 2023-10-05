@@ -46,7 +46,9 @@ const FooterList = (props) => {
       <h4>{data[index].heading}</h4>
       <div className={styles.lists}>
         {data[index].lists.map((each) => (
-          <span className={styles.dataLi}>{each}</span>
+          <span className={styles.dataLi} key={each}>
+            {each}
+          </span>
         ))}
       </div>
     </div>

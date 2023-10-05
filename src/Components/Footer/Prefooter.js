@@ -4,7 +4,7 @@ import FooterList from "./FooterList";
 import styles from "./Prefooter.module.css";
 
 const Prefooter = () => {
-  const img = "images/prefooter.png";
+  const img = "images/admission-bg2.png";
   const iconsListData = [
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,9 @@ const Prefooter = () => {
       />
     </svg>,
   ];
-  const iconstList = iconsListData.map((each) => <li>{each}</li>);
+  const iconstList = iconsListData.map((each, i) => (
+    <li key={i + 1}>{each}</li>
+  ));
 
   return (
     <Wrapper classes={styles.prefooter}>

@@ -1,14 +1,25 @@
 .academics {
   border: none;
   position: relative;
+  text-align: center;
+  overflow-x: hidden;
 }
-
+.academics > p {
+  color: #1f1f1f;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 50px auto 0px;
+  text-align: center;
+}
 .academicsCards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  /* flex-wrap: wrap; */
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .academicsCard {
@@ -21,43 +32,31 @@
 .academicsCard img {
   width: 100%;
 }
-.academicsCard h4 {
-  color: #393429;
-  font-weight: 700;
-  font-size: 18px;
-  padding-left: 16px;
-}
-.academicsCard h6 {
-  color: #3f3f3f;
-  font-weight: 400;
-  font-size: 16px;
-  padding-left: 16px;
-}
-.academics > p {
-  color: #1f1f1f;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  max-width: 700px;
-  margin: 50px auto 0px;
-  text-align: center;
-}
-.academicsCard > p {
-  display: inline;
-  color: #7f2a2a;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 16px;
-}
+
 .academicsHero {
-  position: relative;
-  margin: 50px 30px auto;
-  text-align: center;
-}
-.academicsHero img {
   width: 100%;
+  height: 950px;
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  padding: 0px;
+
+  background-image: url("./academics-BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+
+  /* border: 2px solid red; */
 }
-.academicsHero > div {
+/* .academicsHero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+} */
+/* .academicsHero > div {
   position: absolute;
   max-width: 500px;
   top: 450px;
@@ -67,24 +66,34 @@
   margin-right: auto;
 
   /* align-items: center; */
-  /* justify-content: center; */
+/* justify-content: center; 
   display: flex;
   gap: 20px;
   flex-direction: column;
-  /* margin: 0 auto; */
-}
+} */
 .academicsHeroDiv {
   /* width: 100%; */
+  /* height: 1000px; */
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 120px;
+  z-index: 9;
+  top: 44%;
+  left: 20%;
+  right: 20%;
+  margin: 0 auto;
 
+  /* top: 500px; */
   /* left: 35%; */
   /* margin: 0 auto; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
+/* .academicsHero img {
+  width: 100%;
+} */
 /* .academicsHeroDiv > button { */
 .btn {
   padding: 12px 16px;
@@ -94,4 +103,18 @@
   font-size: 18px;
   border: none;
   border-radius: 7px;
+}
+.acdemicsBtn {
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 1024px) {
+  .academicsCards {
+    justify-content: center;
+  }
+  .academicsHeroDiv {
+    justify-content: center;
+    gap: 20px;
+    top: 40%;
+  }
 }

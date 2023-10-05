@@ -7,6 +7,7 @@
 }
 .navLeft {
   display: flex;
+  align-items: baseline;
   gap: 20px;
   padding: 0px;
 }
@@ -17,4 +18,16 @@
   align-items: center;
   margin: 0 auto;
   /* border: 1px solid #fff; */
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  .navLeft {
+    display: none;
+  }
 }

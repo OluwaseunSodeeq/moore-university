@@ -4,8 +4,14 @@
   color: #fff;
   border-radius: 7px;
   border: none;
+  /* text-align: center; */
+  /* margin: 0 auto; */
 }
-
+.mainButton:hover {
+  color: #7f2a2a;
+  background-color: #fff;
+  border: 2px solid #7f2a2a;
+}
 .minButton {
   background-color: #fff;
 }

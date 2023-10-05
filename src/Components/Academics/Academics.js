@@ -1,5 +1,5 @@
 // import { Link } from "react";
-import CardOne from "../CardOne";
+import CardOne from "../Ui/CardOne";
 import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
@@ -11,21 +11,21 @@ const Academics = () => {
     "Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world";
   const data = [
     {
-      img: "images/Admission.png",
+      img: "images/academics1.png",
       title: "UNDERGRADUATE EDUCATION",
       message:
         "Unsurpassed oppourtunities to participate in the advancement  of entire fields of knowledge",
       linkMsg: "Undergraduate Education ",
     },
     {
-      img: "images/Admission.png",
+      img: "images/academics2.png",
       title: "DRIVING IMPACT",
       message:
         "Continue adult education, executive and professionals programs, and programs for k-12 students",
       linkMsg: "Undergraduate Education  ",
     },
     {
-      img: "images/Admission.png",
+      img: "images/academics3.png",
       title: "GRADUATE EDUCATION",
       message:
         "Unsurpassed oppourtunities to participate in the advancement  of entire fields of knowledge",
@@ -60,11 +60,14 @@ const Academics = () => {
         schools.
       </p>
       <div className={styles.academicsHero}>
-        <img src="images/Admission.png" alt="" />
-        <div>
-          <div className={styles.academicsHeroDiv}>{academicsbuttonsData}</div>
-          <Button text={btnText}></Button>
-        </div>
+        {/* <img src="images/academics-BG.png" alt="" /> */}
+        {/* <div> */}
+        <div className={styles.academicsHeroDiv}>{academicsbuttonsData}</div>
+        {/* <Button text={btnText} /> */}
+        {/* </div> */}
+      </div>
+      <div className={styles.acdemicsBtn}>
+        <Button text={btnText} />
       </div>
     </Wrapper>
   );

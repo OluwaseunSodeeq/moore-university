@@ -4,7 +4,7 @@ import Wrapper from "../Ui/Wrapper";
 import styles from "./AdmissionSection.module.css";
 
 const AdmissionSection = () => {
-  const img = "images/Admission.png";
+  const img = "images/admission-bg1.png";
   return (
     <Wrapper classes={styles.admissionSection}>
       <HeroSectioncard

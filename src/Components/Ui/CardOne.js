@@ -1,4 +1,4 @@
-// import styles from "./Academics.module.css";
+import styles from "../Ui/CardOne.module.css";
 
 const CardOne = ({ each, styling, index }) => {
   const cardsvg = (
@@ -20,10 +20,10 @@ const CardOne = ({ each, styling, index }) => {
   );
   return (
     <div key={index + 1} className={styling}>
-      <div className="imgDiv">
+      <div className={styles.academicsImgDiv}>
         <img src={each.img} alt="" />
       </div>
-      <div className="contentDiv">
+      <div className={styles.academicsContentDiv}>
         <h4>{each.title}</h4>
         <h6>{each.message}</h6>
         <p>

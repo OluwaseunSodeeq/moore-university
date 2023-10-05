@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Nav from "./Components/Nav/Nav";
 import MiniNav from "./Components/MiniNav/MiniNav";
 import "./App.css";
@@ -11,12 +13,15 @@ import CampusLife from "./Components/CampusLife/CampusLife";
 import Athletics from "./Components/Athletics/Athletics";
 import AdmissionSection from "./Components/AdmissionSection/AdmissionSection";
 import Prefooter from "./Components/Footer/Prefooter";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
+  const [open, setOpen] = useState(true);
+  const handler = (yes) => setOpen(!yes);
   return (
     <div className="App">
-      <Nav />
-      <MiniNav />
+      <Nav open={open} handler={handler} />
+      <MiniNav open={open} handler={handler} />
       <Admission />
       <Campus />
       <Academics />
@@ -27,6 +32,7 @@ function App() {
       <Athletics />
       <AdmissionSection />
       <Prefooter />
+      <Footer />
     </div>
   );
 }

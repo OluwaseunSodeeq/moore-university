@@ -8,7 +8,7 @@ const Events = () => {
   const btnText = "More events";
   const eventsData = [
     {
-      img: "images/Admission.png",
+      img: "images/event1.png",
       eventTitle: "CLASS/SEMINAR",
       eventText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
@@ -16,7 +16,7 @@ const Events = () => {
       date: { month: "july", day: "04" },
     },
     {
-      img: "images/Admission.png",
+      img: "images/event2.png",
       eventTitle: "CLASS/SEMINAR",
       eventText:
         "Clinical and Firearms: A Curriculum on Firearm Injury Prevention In Medical Practice",
@@ -24,7 +24,7 @@ const Events = () => {
       date: { month: "july", day: "04" },
     },
     {
-      img: "images/Admission.png",
+      img: "images/event3.png",
       eventTitle: "lorem ipsum  ",
       eventText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
@@ -32,7 +32,7 @@ const Events = () => {
       date: { month: "july", day: "04" },
     },
     {
-      img: "images/Admission.png",
+      img: "images/event4.png",
       eventTitle: "lorem ipsum  ",
       eventText:
         "Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
@@ -62,7 +62,7 @@ const Events = () => {
       <ul className={styles.eventCards}>{dataArr}</ul>
       <Button text={btnText} />
       <div className={styles.EventLastImg}>
-        <img src="images/Admission.png" alt="" />
+        <img src="images/event-Bg.png" alt="" />
       </div>
     </Wrapper>
   );

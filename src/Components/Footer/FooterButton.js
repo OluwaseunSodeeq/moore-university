@@ -9,7 +9,7 @@ const FooterButton = () => {
     "Contact",
   ];
 
-  const buttonLists = data.map((each) => <button>{each}</button>);
+  const buttonLists = data.map((each) => <button key={each}>{each}</button>);
   return <ul className={styles.buttonLists}>{buttonLists}</ul>;
 };
 

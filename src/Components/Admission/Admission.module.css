@@ -1,12 +1,19 @@
 .currentContainer {
   text-align: center;
+  background: #fff;
 }
-h1 {
+.currentContainer h1 {
+  font-size: 48px;
   color: #7f2a2a;
+  margin-top: 10px;
 }
 p {
   color: #3f3f3f;
 }
+.imgBody {
+  margin-top: 16px;
+}
 img {
   width: 100%;
+  border-radius: 4px;
 }

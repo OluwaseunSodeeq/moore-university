@@ -1,0 +1,42 @@
+.academicsImgDiv {
+  width: 100%;
+  height: 310px;
+  border-radius: 7px;
+}
+.academicsImgDiv img {
+  width: 100%;
+  height: 100%;
+}
+.academicsContentDiv {
+  text-align: start;
+  width: 100%;
+  height: 180px;
+  padding: 20px;
+}
+.academicsContentDiv > h4 {
+  color: #393429;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 16px;
+  /* padding-left: 16px; */
+}
+.academicsContentDiv > h6 {
+  color: #3f3f3f;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+
+  /* padding-left: 16px; */
+}
+
+.academicsContentDiv > p {
+  /* display: inline; */
+  color: #7f2a2a;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 25px;
+
+  /* margin-top: -40px; */
+
+  /* padding-left: 16px; */
+}
