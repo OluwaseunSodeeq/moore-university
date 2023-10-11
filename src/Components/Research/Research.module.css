@@ -4,17 +4,39 @@
 
 .dataArr {
   display: flex;
-  gap: 50;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  margin-bottom: 40px;
+  /* height: 94px; */
+  padding: 32px 0px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  /* margin-bottom: 40px; */
 }
 .dataArr p {
-  font-size: 14px;
+  font-size: 16px;
+}
+.dataArr h4 {
+  font-size: 30px;
 }
 .researchCard {
-  width: 250px;
+  width: 280px;
   padding: 0px;
   margin: 0px;
+}
+.research button {
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .dataArr {
+    gap: 40px;
+    /* background: #f4f4f4 !important; */
+  }
+
+  .research > .researchBg {
+    background-color: #f4f4f4;
+    padding: 0px 0px 20px 0px;
+  }
 }

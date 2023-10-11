@@ -2,51 +2,101 @@
   text-align: center;
   opacity: 1;
   margin: 0 auto;
+  padding: 0px;
 }
 .heathCareHero {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
-.healthCareleft {
-  max-width: 632px;
-  height: 632px;
-  /* flex-shrink: 0; */
+
+.healthCareleft,
+.healthCareright {
+  width: 632px;
+  height: 600px;
 }
+
 .healthCareleft img {
   width: 100%;
+  height: 100%;
 }
 .healthCareright {
+  padding-right: 190px;
+  height: auto;
   display: flex;
-  gap: 16px;
+  gap: 30px;
   flex-direction: column;
 }
+
 .heathCard {
-  margin-top: 25px;
-  padding: 12px 100px 12px 12px;
-  background-color: #fcfbf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  height: auto;
   text-align: start;
 }
-.heathCard h4 {
+
+/* .minHealthCard {
+  width: 100%;
+} */
+
+.minHealthCard h4 {
   color: #393429;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  line-height: 24px;
 }
-.heathCard h6 {
+
+.minHealthCard > .parag {
   color: #3f3f3f;
-  font-size: 16px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  /* text-decoration-line: underline; */
+  margin-top: 10px;
+  line-height: 24px;
 }
-.heathCard p {
+.heathCard > p {
   color: #7f2a2a;
   font-size: 16px;
   font-weight: 500;
+  vertical-align: baseline;
+  padding: 0px;
 }
-.heathCard {
-  padding-left: 16px 12px;
+
+.healthCare button {
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+  .heathCareHero {
+    width: 100%;
+  }
+
+  .healthCareleft,
+  .healthCareright {
+    width: 70%;
+  }
+  .healthCareright {
+    padding-right: 50px;
+  }
+  .healthCareleft img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .healthCareright {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .healthCareright {
+    padding-right: 10px;
+  }
 }

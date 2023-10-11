@@ -60,11 +60,7 @@ const Academics = () => {
         schools.
       </p>
       <div className={styles.academicsHero}>
-        {/* <img src="images/academics-BG.png" alt="" /> */}
-        {/* <div> */}
         <div className={styles.academicsHeroDiv}>{academicsbuttonsData}</div>
-        {/* <Button text={btnText} /> */}
-        {/* </div> */}
       </div>
       <div className={styles.acdemicsBtn}>
         <Button text={btnText} />

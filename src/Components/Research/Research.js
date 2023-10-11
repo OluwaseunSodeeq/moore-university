@@ -22,8 +22,10 @@ const Research = () => {
   return (
     <Wrapper classes={styles.research}>
       <HeroSectioncard title={title} message={message}></HeroSectioncard>
-      <div className={styles.dataArr}>{dataArr}</div>
-      <Button text={btnText} />
+      <div className={styles.researchBg}>
+        <div className={styles.dataArr}>{dataArr}</div>
+        <Button text={btnText} />
+      </div>
     </Wrapper>
   );
 };
