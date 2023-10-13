@@ -65,7 +65,7 @@ p {
 @media (max-width: 1024px) {
   .bigSize,
   .smallSize {
-    width: 600px;
+    width: 45%;
   }
   .cards {
     justify-content: center;

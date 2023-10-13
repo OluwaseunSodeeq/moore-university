@@ -1,9 +1,10 @@
 .admissionSection {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .admissionContent {
   width: 100%;
+  margin-top: 40px;
 }
 .imgDiv {
   width: 100%;
@@ -20,7 +21,11 @@
   align-items: center;
   text-align: start;
   margin-bottom: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
+
 .contentDiv div {
   width: 620px;
   pad: 0 20px;
@@ -40,4 +45,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+.admissionSection button {
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .contentDiv {
+    justify-content: center;
+  }
 }

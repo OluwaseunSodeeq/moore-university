@@ -1,22 +1,27 @@
 .athletics {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .athleticsCards,
 .athleticsCard {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .athleticsCards {
+  /* border: 2px solid red; */
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
+  margin-top: 50px;
 }
 .athleticsCard {
   width: 580px;
   height: 240px;
   text-align: start;
+  justify-content: center;
+  /* border: 2px solid black; */
+
   /* border: 2px solid green; */
 
   /* gap: 20px; */
@@ -58,4 +63,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+@media (max-width: 1024px) {
+  .athleticsCards {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .athleticsCard {
+    flex-direction: column;
+    height: auto;
+  }
 }

@@ -40,28 +40,38 @@ const Events = () => {
       date: { month: "july", day: "04" },
     },
   ];
-  const dataArr = eventsData.map((each, i) => (
-    <li className={styles.eventCard} key={i + 1}>
-      <div className={styles.imgDiv}>
-        <img src={each.img} alt="" />
-      </div>
-      <div className={styles.event}>
-        <h4>{each.eventTitle}</h4>
-        <h6>{each.eventText}</h6>
-        <p>{each.time}</p>
-      </div>
-      <div className={styles.dateDiv}>
-        <p>{each.date.month}</p>
-        <span>{each.date.day}</span>
-      </div>
-    </li>
-  ));
+  const dataArr = eventsData.map((each, i) => {
+    const key = Number(i + 1);
+    return (
+      <li
+        key={key}
+        className={
+          key === 2 || key === 3 ? styles.eventCardSmall : styles.eventCardBig
+        }
+      >
+        <div className={styles.imgDiv}>
+          <img src={each.img} alt="" />
+        </div>
+
+        <div className={styles.event}>
+          <h4>{each.eventTitle}</h4>
+          <h6>{each.eventText}</h6>
+          <p>{each.time}</p>
+        </div>
+
+        <div className={styles.dateDiv}>
+          <p>{each.date.month}</p>
+          <span>{each.date.day}</span>
+        </div>
+      </li>
+    );
+  });
   return (
     <Wrapper classes={styles.events}>
       <HeroSectioncard title={title} />
       <ul className={styles.eventCards}>{dataArr}</ul>
       <Button text={btnText} />
-      <div className={styles.EventLastImg}>
+      <div className={styles.eventLastImg}>
         <img src="images/event-Bg.png" alt="" />
       </div>
     </Wrapper>

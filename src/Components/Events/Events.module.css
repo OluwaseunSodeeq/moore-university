@@ -1,21 +1,22 @@
 .events {
   text-align: center;
+  padding-top: 50px;
 }
 .eventCards {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* justify-content: center; */
   flex-wrap: wrap;
-  /* column-gap: 100px; */
+  /* border: 1px solid red; */
+  padding: 0px;
+  margin-top: 30px;
 }
 .eventCards li {
-  width: 450px;
   text-align: start;
 }
 .event {
-  padding: 25px 16px 25px 16px;
-  /* border: 1px solid red;  */
+  padding: 25px 16px;
+  margin-top: 30px;
 }
 .event h4,
 .event h6 {
@@ -26,6 +27,7 @@
   color: #7f2a2a;
 }
 .event h6 {
+  margin-top: 25px;
   color: #1f1f1f;
 }
 .event p {
@@ -35,20 +37,35 @@
   font-weight: 400;
 }
 
-.eventCards li:first-child,
+/* .eventCards li:first-child,
 .eventCards li:last-child {
   width: 648px;
-}
+} */
 .imgDiv {
   height: 230px;
   width: 100%;
+  /* border: 1px solid blue; */
+  padding: 0px;
 }
 .imgDiv img {
   width: 100%;
   height: 100%;
 }
-.eventCard {
+.eventCardSmall {
   position: relative;
+  width: 480px;
+  height: 450px;
+  background-color: #fff;
+
+  /* border: 1px solid blue; */
+}
+.eventCardBig {
+  position: relative;
+  width: 750px;
+  height: 450px;
+  background-color: #fff;
+  /* border: 20px solid #fff; */
+  /* border: 1px solid blue; */
 }
 .dateDiv {
   position: absolute;
@@ -79,11 +96,37 @@
   font-weight: 700;
 }
 
-.EventLastImg {
+.eventLastImg {
   width: 100%;
   height: 650px;
   margin-top: 30px;
 }
-.EventLastImg img {
+.events button {
+  margin-top: 25px;
+}
+.eventLastImg img {
   width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .eventCards {
+    justify-content: center;
+  }
+  .eventCardBig,
+  .eventCardSmall {
+    width: 45%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .eventCardBig,
+  .eventCardSmall {
+    width: 80%;
+    height: auto;
+  }
+
+  .eventLastImg {
+    height: auto;
+  }
 }

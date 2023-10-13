@@ -151,7 +151,7 @@ const Prefooter = () => {
             </div>
           </div>
           <div className={styles.bottom}>
-            <div className="a">
+            <div className={styles.two}>
               <FooterList index={5} />
               <FooterList index={6} />
             </div>
