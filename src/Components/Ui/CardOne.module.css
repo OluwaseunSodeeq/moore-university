@@ -3,6 +3,81 @@
   height: 310px;
   border-radius: 7px;
 }
+/* .academicsImgDiv img { */
+img {
+  width: 100%;
+  height: 100%;
+}
+.academicsContentDiv {
+  text-align: start;
+  width: 100%;
+  height: 180px;
+  padding-left: 16px;
+  background-color: #fcfbf7;
+  padding-bottom: 10px;
+}
+h4 {
+  color: #393429;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 16px;
+}
+.cardMsg {
+  color: #3f3f3f;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+p {
+  color: #7f2a2a;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .academicsImgDiv {
+    width: 100%;
+    height: auto;
+  }
+  .academicsContentDiv {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .cardMsg {
+    padding-right: 10px;
+  }
+  .cardMsg,
+  p {
+    font-size: 14px;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 300px) {
+  h4 {
+    font-size: 16px;
+  }
+
+  .cardMsg {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+/* .academicsImgDiv {
+  width: 100%;
+  height: 310px;
+  border-radius: 7px;
+}
 .academicsImgDiv img {
   width: 100%;
   height: 100%;
@@ -18,24 +93,54 @@
   font-weight: 700;
   font-size: 18px;
   margin-top: 16px;
-  /* padding-left: 16px; */
 }
 .academicsContentDiv > h6 {
   color: #3f3f3f;
   font-weight: 400;
   font-size: 16px;
   margin-top: 16px;
-
-  /* padding-left: 16px; */
 }
 
 .academicsContentDiv > p {
-  /* display: inline; */
   color: #7f2a2a;
   font-weight: 500;
   font-size: 16px;
   margin-top: 25px;
   padding-top: 20px;
-
-  /* padding-left: 16px; */
 }
+@media (max-width: 500px) {
+  .academicsImgDiv {
+    width: 100%;
+    height: auto;
+  }
+  .academicsContentDiv {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .academicsContentDiv > h6 {
+    padding-right: 10px;
+  }
+  .academicsContentDiv > h6,
+  .academicsContentDiv > p {
+    font-size: 14px;
+  }
+  .academicsContentDiv > p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .academicsContentDiv > h4 {
+    font-size: 16px;
+  }
+
+  .academicsContentDiv > h6 {
+    font-size: 12px;
+  }
+  .academicsContentDiv > p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+} 
+*/

@@ -71,8 +71,16 @@
   }
 }
 @media (max-width: 500px) {
+  .athleticsCard > div > img {
+    height: auto;
+    /* height: 100px; */
+    /* border: 2px solid red; */
+  }
   .athleticsCard {
     flex-direction: column;
     height: auto;
+  }
+  .athleticsCard:last-child {
+    display: none;
   }
 }

@@ -43,7 +43,9 @@ const HealthCare = () => {
     <div className={styles.heathCard} key={i + 1}>
       <div className={styles.minHealthCard}>
         <h4>{each.tittle}</h4>
-        <span className={styles.parag}>{each.text}</span>
+        <div className={styles.parag}>
+          <span>{each.text}</span>
+        </div>
       </div>
       <p>
         {each.textt}

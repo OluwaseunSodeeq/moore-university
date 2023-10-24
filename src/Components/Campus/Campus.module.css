@@ -11,11 +11,15 @@
   text-decoration: none;
 }
 
-h1 {
-  color: #1f1f1f;
+.campusCardText h4 {
+  font-size: 16px;
+  color: #aa3939;
+  font-weight: 400;
 }
-p {
-  color: #3f3f3f;
+.campusCardText h6 {
+  font-size: 16px;
+  color: #1f1f1f;
+  font-weight: 500;
 }
 
 .bigSize,
@@ -70,16 +74,15 @@ p {
   .cards {
     justify-content: center;
   }
-  .campusCardText h4 {
-    font-size: 24px;
-  }
-  .campusCardText h6 {
-    font-size: 20px;
-  }
 }
 @media (max-width: 768px) {
   .bigSize,
   .smallSize {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .campusCardImg {
+    display: none;
   }
 }

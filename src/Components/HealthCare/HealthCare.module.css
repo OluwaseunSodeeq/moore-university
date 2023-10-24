@@ -15,7 +15,7 @@
 
 .healthCareleft,
 .healthCareright {
-  width: 632px;
+  max-width: 632px;
   height: 600px;
 }
 
@@ -52,13 +52,14 @@
   line-height: 24px;
 }
 
-.minHealthCard > .parag {
+.minHealthCard span {
   color: #3f3f3f;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 20px;
   line-height: 24px;
+  background-color: #fff;
 }
 .heathCard > p {
   color: #7f2a2a;
@@ -66,6 +67,7 @@
   font-weight: 500;
   vertical-align: baseline;
   padding: 0px;
+  white-space: nowrap;
 }
 
 .healthCare button {
@@ -90,13 +92,36 @@
 }
 
 @media (max-width: 768px) {
+  .healthCareleft {
+    height: 500px;
+  }
   .healthCareright {
     padding-right: 30px;
   }
 }
 
 @media (max-width: 500px) {
+  .healthCareleft,
+  .healthCareright {
+    height: auto;
+  }
   .healthCareright {
     padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .heathCard > p,
+  .minHealthCard h4 {
+    font-size: 16px;
+  }
+  .minHealthCard > .parag {
+    margin-top: 10px;
+  }
+  .minHealthCard span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .heathCard > p {
+    margin-top: 7px;
   }
 }

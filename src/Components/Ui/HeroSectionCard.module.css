@@ -4,15 +4,31 @@
   text-align: center;
   background-color: #fff;
 }
-h1 {
+.currentContainer > h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
+  /* color: #7f2a2a; */
+
   /* margin-top: 20px; */
 }
-p {
+.currentContainer > p {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   margin-top: 16px;
+  color: #3f3f3f;
+}
+@media (max-width: 1024px) {
+  .currentContainer > h1 {
+    font-size: 24px;
+  }
+  .currentContainer > p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .currentContainer > p {
+    font-size: 14px;
+  }
 }

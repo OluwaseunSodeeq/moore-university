@@ -39,7 +39,7 @@ const CardOne = ({ each, styling, index }) => {
       </div>
       <div className={styles.academicsContentDiv}>
         <h4>{each.title}</h4>
-        <h6>{each.message}</h6>
+        <div className={styles.cardMsg}>{each.message}</div>
         <p>
           {each.linkMsg}
           {cardsvg}

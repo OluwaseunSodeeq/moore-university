@@ -2,7 +2,7 @@
  
 } */
 .navFlex {
-  background: #aa3939;
+  background-color: #aa3939;
   width: 100%;
 }
 .navLeft {
@@ -12,7 +12,6 @@
   padding: 0px;
 }
 .containerNav {
-  /* max-width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +25,7 @@
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
+    background-color: #aa3939;
   }
   .navLeft {
     display: none;

@@ -2,7 +2,7 @@
   text-align: center;
   padding-top: 0px;
 
-  margin-top: -100px;
+  margin-top: 70px;
 }
 .campusCards {
   display: flex;
@@ -62,6 +62,9 @@
   margin-top: 40px;
 }
 @media (max-width: 1024px) {
+  .campusLife {
+    margin-top: 30px;
+  }
   .campusCards {
     gap: 40px;
   }
@@ -81,5 +84,18 @@
   .campusLifeCard:nth-child(3),
   .campusLifeCard {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .campusLife {
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  .campusLifeCard img {
+    height: 180px;
+  }
+
+  .campusLifeCard:nth-child(2) {
+    display: none;
   }
 }

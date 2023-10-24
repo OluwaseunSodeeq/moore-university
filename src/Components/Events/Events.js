@@ -60,8 +60,10 @@ const Events = () => {
         </div>
 
         <div className={styles.dateDiv}>
-          <p>{each.date.month}</p>
-          <span>{each.date.day}</span>
+          <p>{each.date.month.slice(0, 3)}</p>
+          <span>
+            {+each.date.day < 10 ? ` 0${+each.date.day}` : `${+each.date.day}`}
+          </span>
         </div>
       </li>
     );

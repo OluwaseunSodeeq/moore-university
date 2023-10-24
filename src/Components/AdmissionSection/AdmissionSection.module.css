@@ -27,8 +27,9 @@
 }
 
 .contentDiv div {
-  width: 620px;
+  max-width: 610px;
   pad: 0 20px;
+  /* border: 2px solid red; */
 }
 .contentDiv h6 {
   color: #1f1f1f;
@@ -53,5 +54,21 @@
 @media (max-width: 1024px) {
   .contentDiv {
     justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .imgDiv {
+    height: 200px;
+  }
+  .contentDiv h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .contentDiv p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -5px;
   }
 }

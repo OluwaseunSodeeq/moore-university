@@ -24,6 +24,9 @@
   gap: 2px;
   margin-top: 10px;
 }
+.lists > span {
+  background-color: #fff;
+}
 .listsContainer h4,
 .dataLi {
   font-size: 16px;
@@ -49,6 +52,7 @@
 }
 .prefooterDiv > .bottom {
   margin-top: 20px;
+  gap: 60px;
 }
 .two > div:last-child {
   margin-top: 20px;
@@ -74,6 +78,16 @@ align-items: center; */
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .prefooter {
+    margin-top: 50px;
+  }
+  .imgDiv {
+    height: auto;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 768px) {

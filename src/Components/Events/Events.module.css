@@ -7,9 +7,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* border: 1px solid red; */
   padding: 0px;
-  margin-top: 30px;
 }
 .eventCards li {
   text-align: start;
@@ -87,6 +85,10 @@
   color: #393429;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 15px;
+  /* border: 2px solid red; */
+  /* vertical-align: center; */
+  padding: 0px;
 }
 .dateDiv span {
   width: 50%;
@@ -112,10 +114,17 @@
 @media (max-width: 1024px) {
   .eventCards {
     justify-content: center;
+    align-items: center;
   }
   .eventCardBig,
   .eventCardSmall {
     width: 45%;
+    height: auto;
+  }
+  .eventCards li:first-child {
+    margin-top: 20px;
+  }
+  .eventLastImg {
     height: auto;
   }
 }
@@ -128,5 +137,55 @@
 
   .eventLastImg {
     height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .eventCardBig,
+  .eventCardSmall {
+    background-color: #f4f4f4;
+    padding: 0px;
+  }
+  .imgDiv {
+    display: none;
+  }
+  .dateDiv {
+    height: 100%;
+    width: 53px;
+    background-color: #5f5e5e;
+    top: 0;
+    left: 0;
+    gap: 0px;
+  }
+  .dateDiv P {
+    /* word-wrap: break-word; */
+    height: 30px;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .event {
+    padding: 0px 5px 10px 60px;
+    /* padding-left: 40px; */
+  }
+  .dateDiv > span {
+    height: 20px;
+    color: #f4f4f4;
+    background-color: #5f5e5e;
+  }
+
+  .event h4 {
+    font-weight: 500;
+  }
+  .event h6 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .event p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .eventLastImg {
+    display: none;
   }
 }
