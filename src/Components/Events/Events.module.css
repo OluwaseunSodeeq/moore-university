@@ -1,6 +1,7 @@
 .events {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .eventCards {
   display: flex;
@@ -165,7 +166,7 @@
     margin-top: 0px;
   }
   .event {
-    padding: 0px 5px 10px 60px;
+    padding: 0px 5px 20px 60px;
     /* padding-left: 40px; */
   }
   .dateDiv > span {
@@ -176,14 +177,17 @@
 
   .event h4 {
     font-weight: 500;
+    margin-top: -10px;
   }
   .event h6 {
     font-weight: 400;
     font-size: 14px;
+    margin-top: 10px;
   }
   .event p {
     font-size: 14px;
     font-weight: 400;
+    margin-top: 10px;
   }
   .eventLastImg {
     display: none;

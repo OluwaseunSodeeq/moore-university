@@ -20,8 +20,7 @@ function App() {
   const handler = (yes) => setOpen(!yes);
   return (
     <div className="App">
-      <Nav open={open} handler={handler} />
-      <MiniNav open={open} handler={handler} />
+      <Nav open={open} setOpen={setOpen} handler={handler} />
       <Admission />
       <Campus />
       <Academics />

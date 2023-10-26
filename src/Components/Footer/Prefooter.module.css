@@ -1,5 +1,6 @@
 .prefooter {
   margin-top: 100px;
+  padding-top: 10px;
 }
 .imgDiv {
   width: 100%;
@@ -12,6 +13,7 @@
   justify-content: flex-end;
   align-content: center;
   gap: 20px;
+  margin-top: 15px;
 }
 
 .icons li {
@@ -96,7 +98,6 @@ align-items: center; */
     /* height: 280px; */
     height: auto;
     margin: 0 auto;
-    /* border: 2px solid blue; */
   }
   .prefooterDiv {
     display: none;
@@ -112,5 +113,10 @@ align-items: center; */
   .precontainer {
     margin-top: 20px;
     /* border: 2px solid red; */
+  }
+}
+@media (max-width: 500px) {
+  .imgDiv {
+    padding: 0px 10px;
   }
 }

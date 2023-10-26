@@ -40,7 +40,7 @@ const Athletics = () => {
     <CardOne each={each} styling={styles.athleticsCard} index={ind} />
   ));
   return (
-    <Wrapper classes={styles.athletics}>
+    <Wrapper classes={styles.athletics} id="athletics">
       <HeroSectioncard
         title="Athletics"
         message="Providing student-athletes the opportunity to achieve excellence both in competition and in the classroom"

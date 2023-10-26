@@ -1,9 +1,10 @@
+import React from "react";
 import CardOne from "../Ui/CardOne";
 import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./CampusLife.module.css";
-
+const id = "campuslife";
 const CampusLife = () => {
   const title = "Campus Life";
   const message =
@@ -45,7 +46,7 @@ const CampusLife = () => {
   ));
   const btnText = "More about campus life";
   return (
-    <Wrapper classes={styles.campusLife}>
+    <Wrapper classes={styles.campusLife} id={id}>
       <HeroSectioncard title={title} message={message}></HeroSectioncard>
       <div className={styles.campusCards}>{myData}</div>
       <Button text={btnText} />

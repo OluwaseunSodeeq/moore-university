@@ -23,7 +23,7 @@ const CampusCard = () => {
     },
     {
       image: "images/campus-image05.png",
-      miniTitle: "SCIENCE AND TECHNOLOGY",
+      miniTitle: "SOCIAL SCIENCE",
       miniText: "ChatGPT outscore med student on clinical exam question",
     },
     {

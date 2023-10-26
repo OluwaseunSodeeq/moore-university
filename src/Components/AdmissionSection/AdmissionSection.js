@@ -1,8 +1,9 @@
+import React from "react";
 import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./AdmissionSection.module.css";
-
+const id = "admission";
 const data = [
   {
     heading:
@@ -25,7 +26,7 @@ const AdmissionSection = () => {
 
   const img = "images/admission-bg1.png";
   return (
-    <Wrapper classes={styles.admissionSection}>
+    <Wrapper classes={styles.admissionSection} id={id}>
       <HeroSectioncard
         title="Admission"
         message="Offering extraordinary freedom to explore, to collaborate, and to challenge yourself"

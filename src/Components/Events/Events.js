@@ -1,8 +1,9 @@
+import React from "react";
 import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./Events.module.css";
-
+const id = "events";
 const Events = () => {
   const title = "Upcoming Events";
   const btnText = "More events";
@@ -69,7 +70,7 @@ const Events = () => {
     );
   });
   return (
-    <Wrapper classes={styles.events}>
+    <Wrapper classes={styles.events} id={id}>
       <HeroSectioncard title={title} />
       <ul className={styles.eventCards}>{dataArr}</ul>
       <Button text={btnText} />

@@ -1,10 +1,11 @@
 // import { Link } from "react";
+import React from "react";
 import CardOne from "../Ui/CardOne";
 import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./Academics.module.css";
-
+const id = "academics";
 const Academics = () => {
   const title = "Academics";
   const message =
@@ -34,7 +35,12 @@ const Academics = () => {
   ];
 
   const myData = data.map((each, ind) => (
-    <CardOne each={each} styling={styles.academicsCard} index={ind}></CardOne>
+    <CardOne
+      each={each}
+      key={ind}
+      styling={styles.academicsCard}
+      index={ind}
+    ></CardOne>
   ));
   const buttonData = [
     "Medicine",
@@ -52,7 +58,7 @@ const Academics = () => {
   ));
   const btnText = "More about academics";
   return (
-    <Wrapper classes={styles.academics}>
+    <Wrapper classes={styles.academics} id={id}>
       <HeroSectioncard title={title} message={message}></HeroSectioncard>
       <div className={styles.academicsCards}>{myData}</div>
       <p>

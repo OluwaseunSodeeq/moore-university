@@ -2,6 +2,7 @@ import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./Research.module.css";
+const id = "research";
 const Research = () => {
   const title = "Research";
   const message =
@@ -20,7 +21,7 @@ const Research = () => {
   const btnText = "More about research";
 
   return (
-    <Wrapper classes={styles.research}>
+    <Wrapper classes={styles.research} id={id}>
       <HeroSectioncard title={title} message={message}></HeroSectioncard>
       <div className={styles.researchBg}>
         <div className={styles.dataArr}>{dataArr}</div>

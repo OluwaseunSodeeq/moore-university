@@ -2,6 +2,7 @@ import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./HealthCare.module.css";
+const id = "health";
 const HealthCare = () => {
   const title = "Health Care";
   const message =
@@ -55,7 +56,7 @@ const HealthCare = () => {
   ));
   const btnText = "More about health care";
   return (
-    <Wrapper classes={styles.healthCare}>
+    <Wrapper classes={styles.healthCare} id={id}>
       <HeroSectioncard title={title} message={message} />
       <div className={styles.heathCareHero}>
         <div className={styles.healthCareleft}>

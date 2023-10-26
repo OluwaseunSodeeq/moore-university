@@ -1,8 +1,9 @@
+import React from "react";
 import Wrapper from "../Ui/Wrapper";
 import FooterButton from "./FooterButton";
 import FooterList from "./FooterList";
 import styles from "./Prefooter.module.css";
-
+const id = "about";
 const Prefooter = () => {
   const img = "images/admission-bg2.png";
   const iconsListData = [
@@ -130,7 +131,7 @@ const Prefooter = () => {
   ));
 
   return (
-    <Wrapper classes={styles.prefooter}>
+    <Wrapper classes={styles.prefooter} id={id}>
       <div className={styles.imgDiv}>
         <img src={img} alt="" />
       </div>

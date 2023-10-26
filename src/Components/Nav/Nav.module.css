@@ -1,9 +1,10 @@
-/* .nav {
- 
-} */
+nav {
+  position: fixed;
+  z-index: 99;
+}
 .navFlex {
-  background-color: #aa3939;
   width: 100%;
+  height: auto;
 }
 .navLeft {
   display: flex;
@@ -16,6 +17,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  height: 40px;
+  background-color: #aa3939;
+
   /* border: 1px solid #fff; */
 }
 .hamburger {
@@ -23,6 +27,15 @@
 }
 
 @media (max-width: 1024px) {
+  .navFlex {
+    /* background-color: "none"; */
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .containerNav {
+    height: 30px;
+    background-color: #aa3939;
+  }
   .hamburger {
     display: block;
     background-color: #aa3939;

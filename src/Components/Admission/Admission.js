@@ -1,3 +1,4 @@
+import React from "react";
 import Wrapper from "../Ui/Wrapper";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import styles from "./Admission.module.css";

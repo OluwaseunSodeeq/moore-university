@@ -1,7 +1,8 @@
-/* .admission {
-  text-align: center;
-  background: #fff;
-} */
+.admission {
+  padding-top: 100px;
+  /* text-align: center;
+  background: #fff; */
+}
 
 /* .slidersContainer,  */
 /* .slider {
@@ -51,4 +52,17 @@ img {
   border-radius: 4px;
 }
 @media (max-width: 1024px) {
+  .admission {
+    padding-top: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .admission {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .admission {
+    padding-top: 30px;
+  }
 }

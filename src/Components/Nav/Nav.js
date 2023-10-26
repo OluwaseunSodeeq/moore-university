@@ -5,8 +5,8 @@ import Logo from "./Logo";
 import classes from "./Nav.module.css";
 import NavList from "./NavList";
 import Search from "./Search";
-
-const Nav = ({ open, handler }) => {
+import MiniNav from "../MiniNav/MiniNav";
+const Nav = ({ open, handler, setOpen }) => {
   const navList = [
     "Information for:",
     "Faculty & Staff",
@@ -18,7 +18,7 @@ const Nav = ({ open, handler }) => {
   ];
 
   return (
-    <nav className={classes.navFlex}>
+    <nav className={classes.navFlex} id="top">
       <Wrapper classes={classes.containerNav}>
         <Logo />
 
@@ -28,6 +28,8 @@ const Nav = ({ open, handler }) => {
         </div>
         <Hamburger open={open} handler={handler} />
       </Wrapper>
+
+      <MiniNav open={open} setOpen={setOpen} handler={handler} />
     </nav>
   );
 };

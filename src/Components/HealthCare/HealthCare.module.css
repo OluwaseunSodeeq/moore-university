@@ -1,8 +1,9 @@
 .healthCare {
   text-align: center;
   opacity: 1;
-  margin: 0 auto;
-  padding-top: 30px;
+  margin: 0 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .heathCareHero {
   display: flex;
