@@ -32,6 +32,11 @@
 }
 
 @media (max-width: 1024px) {
+  .research {
+    padding-top: 0px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+  }
   .dataArr {
     gap: 40px;
     /* background: #f4f4f4 !important; */

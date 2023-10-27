@@ -7,22 +7,27 @@ import { useState, useEffect } from "react";
 const Admission = () => {
   const data = [
     {
-      title: "Admissions are now open One!",
+      title: "Admissions are now open!",
       content: "images/admission1.png",
       message: "Your pathway to success begins now! Embrace new possibilities",
     },
     {
-      title: "Admissions are now open Two!",
+      title: "Unleashing Creativity",
+      content: "images/campuslife1.png",
+      message: "Your pathway to success begins now! Embrace new possibilities",
+    },
+    {
+      title: "Unlocking Potential",
       content: "images/admission1.png",
       message: "Your pathway to success begins now! Embrace new possibilities",
     },
     {
-      title: "Admissions are now open Three!",
+      title: "A Commmunity of Innovators!",
       content: "images/admission1.png",
       message: "Your pathway to success begins now! Embrace new possibilities",
     },
     {
-      title: "Admissions are now open Four!",
+      title: "Diverse voices, United Vision",
       content: "images/admission1.png",
       message: "Your pathway to success begins now! Embrace new possibilities",
     },

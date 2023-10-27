@@ -5,9 +5,13 @@
   color: #f7eeee;
   /* border: 1px solid red; */
 }
-svg {
-  width: 50px;
-  padding: 0px;
+.searchIcon {
+  background-color: #aa3939;
+}
+.searchIcon > .bi-search {
+  color: #f7eeee;
+  /* width: 50px; */
+  margin-top: 15px;
 }
 .bi-search {
   font-weight: 900;
@@ -17,7 +21,8 @@ svg {
   display: none;
 } */
 label {
-  /* margin-top: -5px; */
+  margin-left: 10px;
+
   font-size: 17px;
 }
 .searchBAr {

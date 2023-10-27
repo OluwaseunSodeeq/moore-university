@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 1024px) {
+  .admissionSection {
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
   .contentDiv {
     justify-content: center;
   }

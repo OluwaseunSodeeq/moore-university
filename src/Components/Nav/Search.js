@@ -22,21 +22,16 @@ const Search = () => {
     <div className={styles.seacrchDiv}>
       {type ? (
         <>
-          <span className="search-icon" onClick={handleChange}>
+          <span className={styles.searchIcon} onClick={handleChange}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
             >
-              <path
-                d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
-                stroke="#DFDEDE"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
           </span>
           <label htmlFor="">Search</label>
@@ -45,7 +40,7 @@ const Search = () => {
         <form onSubmit={handleInput}>
           <input
             type="text"
-            className="searchBAr"
+            className={styles.searchBAr}
             onChange={(e) => setInput(e.target.value)}
             value={input}
           />

@@ -113,6 +113,10 @@
 }
 
 @media (max-width: 1024px) {
+  .events {
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
   .eventCards {
     justify-content: center;
     align-items: center;

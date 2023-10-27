@@ -63,7 +63,8 @@
 }
 @media (max-width: 1024px) {
   .campusLife {
-    margin-top: 30px;
+    margin-top: -20px;
+    padding-top: 0px;
   }
   .campusCards {
     gap: 40px;

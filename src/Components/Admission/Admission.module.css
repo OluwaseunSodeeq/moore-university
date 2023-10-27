@@ -1,5 +1,7 @@
 .admission {
   padding-top: 100px;
+
+  /* padding-bottom: 50px; */
   /* text-align: center;
   background: #fff; */
 }
@@ -46,6 +48,7 @@
 
 .imgBody {
   margin-top: 16px;
+  height: 550px;
 }
 img {
   width: 100%;
@@ -53,7 +56,10 @@ img {
 }
 @media (max-width: 1024px) {
   .admission {
-    padding-top: 45px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    /* border: 2px solid blue; */
   }
 }
 @media (max-width: 768px) {
@@ -63,6 +69,7 @@ img {
 }
 @media (max-width: 500px) {
   .admission {
-    padding-top: 30px;
+    margin-bottom: 160px;
+    /* padding-bottom: 180px; */
   }
 }

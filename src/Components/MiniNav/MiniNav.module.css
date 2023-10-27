@@ -50,21 +50,24 @@
 }
 
 @media (max-width: 1024px) {
-  .miniNav {
+  .miniNav > ul {
+    height: 100vh;
   }
   .miniNavHide {
-    /* display: none; */
-    margin-right: -150%;
+    display: none;
+    /* margin-right: -150%; */
   }
   .miniNavShow {
-    margin-right: 0%;
+    /* margin-right: 0%; */
+    display: block;
   }
   .miniNavShow > ul {
+    top: 40px;
     flex-direction: column;
-
     background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid red;
-    width: 90%;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@
 import { Link } from "react-scroll";
 
 import styles from "./MiniNav.module.css";
+// import { useState } from "react";
 const MiniNav = ({ open, setOpen, handler }) => {
   // const miniNavList = [
   //   "News",
@@ -13,7 +14,8 @@ const MiniNav = ({ open, setOpen, handler }) => {
   //   "Admission",
   //   "About",
   // ];
-
+  // const [isDesktop, setDesktop] = useState(window.innerWidth > 1024);
+  const screenWidth = window.innerWidth > 1024;
   return (
     <div
       className={`${styles.miniNav} ${
@@ -27,7 +29,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="news"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -39,7 +41,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="events"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={400}
             onClick={() => setOpen(true)}
           >
@@ -51,7 +53,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="academics"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -63,7 +65,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="research"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -75,7 +77,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="health"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -87,7 +89,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="campuslife"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -99,7 +101,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="admission"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >
@@ -111,7 +113,7 @@ const MiniNav = ({ open, setOpen, handler }) => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={screenWidth ? -100 : -50}
             duration={500}
             onClick={() => setOpen(true)}
           >

@@ -33,12 +33,13 @@ nav {
     padding-bottom: 20px;
   }
   .containerNav {
-    height: 30px;
+    height: 40px;
     background-color: #aa3939;
   }
   .hamburger {
     display: block;
     background-color: #aa3939;
+    padding-top: 5px;
   }
   .navLeft {
     display: none;
