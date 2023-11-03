@@ -4,8 +4,8 @@
   /* background-color: #fff; */
   height: auto;
   width: 100%;
-  /* border: 2px solid blue; */
 
+  /* border: 2px solid blue; */
   /* top: 37px; */
 }
 .miniNavShow,
@@ -43,10 +43,16 @@
   white-space: nowrap;
 }
 
-.miniNavShow > ul li:hover,
-.miniNavHide > ul li:hover {
+.navItem:hover {
   border-bottom: 3px solid #aa3939;
   cursor: pointer;
+}
+
+.navItem .active {
+  border-bottom: 3px solid #aa3939;
+}
+.navItem .deactive {
+  border: none;
 }
 
 @media (max-width: 1024px) {

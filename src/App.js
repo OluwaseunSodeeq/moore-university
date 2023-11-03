@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Nav from "./Components/Nav/Nav";
-import MiniNav from "./Components/MiniNav/MiniNav";
+// import MiniNav from "./Components/MiniNav/MiniNav";
 import "./App.css";
 import Admission from "./Components/Admission/Admission";
 import Campus from "./Components/Campus/Campus";

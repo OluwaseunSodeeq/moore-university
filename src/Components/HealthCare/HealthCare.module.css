@@ -1,9 +1,10 @@
 .healthCare {
   text-align: center;
-  opacity: 1;
-  margin: 0 30px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+  padding: 30px 0px 20px;
+  margin: 0px 30px auto;
+
+  /* border: 2px solid red; */
 }
 .heathCareHero {
   display: flex;
@@ -16,8 +17,9 @@
 
 .healthCareleft,
 .healthCareright {
-  max-width: 632px;
+  max-width: 590px;
   height: 600px;
+  margin-top: 20px;
 }
 
 .healthCareleft img {
@@ -25,11 +27,13 @@
   height: 100%;
 }
 .healthCareright {
-  padding-right: 190px;
+  padding-right: 170px;
   height: auto;
   display: flex;
   gap: 30px;
   flex-direction: column;
+  padding-left: 20px;
+  /* border: 2px solid red; */
 }
 
 .heathCard {
@@ -72,7 +76,8 @@
 }
 
 .healthCare button {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 50px;
 }
 @media (max-width: 1024px) {
   .healthCare {
@@ -108,8 +113,10 @@
 @media (max-width: 500px) {
   .healthCareleft,
   .healthCareright {
+    width: 100%;
     height: auto;
   }
+
   .healthCareright {
     padding-right: 10px;
     padding-left: 10px;

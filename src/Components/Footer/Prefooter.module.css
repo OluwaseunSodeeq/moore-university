@@ -107,7 +107,6 @@ align-items: center; */
     justify-content: center;
   }
   .icons {
-    gap: 0px;
     margin-top: 20px;
   }
   .precontainer {

@@ -2,7 +2,7 @@ import Button from "../Ui/Button";
 import HeroSectioncard from "../Ui/HeroSectionCard";
 import Wrapper from "../Ui/Wrapper";
 import styles from "./HealthCare.module.css";
-const id = "health";
+const id = "healthcare";
 const HealthCare = () => {
   const title = "Health Care";
   const message =

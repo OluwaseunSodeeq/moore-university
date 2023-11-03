@@ -72,4 +72,7 @@ img {
     margin-bottom: 160px;
     /* padding-bottom: 180px; */
   }
+  .imgBody {
+    height: 400px;
+  }
 }

@@ -2,20 +2,32 @@
 import { Link } from "react-scroll";
 
 import styles from "./MiniNav.module.css";
+// import { useEffect } from "react";
+// import { useState } from "react";
 // import { useState } from "react";
 const MiniNav = ({ open, setOpen, handler }) => {
-  // const miniNavList = [
-  //   "News",
-  //   "Events",
-  //   "Academics",
-  //   "Research",
-  //   "Health Care",
-  //   "Campus Life",
-  //   "Admission",
-  //   "About",
-  // ];
-  // const [isDesktop, setDesktop] = useState(window.innerWidth > 1024);
+  const miniNavList = [
+    "News",
+    "Events",
+    "Academics",
+    "Research",
+    "Health Care",
+    "Campus Life",
+    "Admission",
+    "About",
+  ];
   const screenWidth = window.innerWidth > 1024;
+  // const [active, setActive] = useState(false);
+
+  const linkHandler = function (e) {
+    console.log(e);
+    // setActive(true);
+    setOpen(true);
+  };
+  // useEffect(() => {
+  //   const key = miniNavList(0).toLowerCase();
+  //   console.log(key);
+  // }, []);
   return (
     <div
       className={`${styles.miniNav} ${
@@ -24,124 +36,32 @@ const MiniNav = ({ open, setOpen, handler }) => {
       onClick={() => setOpen(true)}
     >
       <ul>
-        <li>
-          <Link
-            to="news"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            News
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="events"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={400}
-            onClick={() => setOpen(true)}
-          >
-            Events
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="academics"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            Academics
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="research"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            Research
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="health"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            Health Care
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="campuslife"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            Campus Life
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="admission"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            Admission
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={screenWidth ? -100 : -50}
-            duration={500}
-            onClick={() => setOpen(true)}
-          >
-            About
-          </Link>
-        </li>
+        {miniNavList.map((each) => {
+          const key = each.toLowerCase();
+          return (
+            <li
+              key={key}
+              className={`${styles.navItem} ${
+                each.toLowerCase() === key ? styles.active : styles.deactive
+              }`}
+            >
+              <Link
+                to={each.toLowerCase().replace(" ", "")}
+                value={each.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={screenWidth ? -100 : -65}
+                duration={500}
+                onClick={(e) => linkHandler(key)}
+              >
+                {each}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
 };
-
-// const MiniNav = ({ open, handler }) => {
-//   const miniNavList = [
-//     "News",
-//     "Events",
-//     "Academics",
-//     "Research",
-//     "Health Care",
-//     "Campus Life",
-//     "Admission",
-//     "About",
-//   ];
-//   return (
-//     <div className={`${open ? styles.miniNavHide : styles.miniNavShow}`}>
-//       miniNavList.map((nav, i) => (<li key={i + 1}>{nav}</li>))
-//       {/* <NavList listArray={miniNavList} handler={handler} /> */}
-//     </div>
-//   );
-// };
 
 export default MiniNav;

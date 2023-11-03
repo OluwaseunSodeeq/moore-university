@@ -24,7 +24,11 @@ const Footer = () => {
           <Logo />
           <Right />
         </div>
-        <p>©Copyright Stanford University. Stanford, California 94305.</p>
+        <div className={styles.paragraphs}>
+          <p>©Copyright Stanford University. Stanford, California 94305.</p>
+          <p>Designed by Jimoh Abdul-Gafar, Coded by Oluwaseun Sodeeq.</p>
+          <p>© Oct, 2023.</p>
+        </div>
       </div>
     </Wrapper>
   );

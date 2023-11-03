@@ -62,8 +62,14 @@
   }
 }
 @media (max-width: 500px) {
+  .contentDiv,
+  .imgDiv {
+    width: 90%;
+    margin: 0 auto;
+  }
   .contentDiv {
     padding: 0px 15px;
+    margin-top: 30px;
   }
   .imgDiv {
     height: 200px;
