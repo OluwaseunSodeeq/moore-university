@@ -18,7 +18,6 @@ const MiniNav = ({ open, setOpen, handler }) => {
   ];
   const screenWidth = window.innerWidth > 1024;
   // const [active, setActive] = useState(false);
-
   const linkHandler = function (e) {
     console.log(e);
     // setActive(true);
@@ -28,6 +27,9 @@ const MiniNav = ({ open, setOpen, handler }) => {
   //   const key = miniNavList(0).toLowerCase();
   //   console.log(key);
   // }, []);
+
+  console.log(screenWidth);
+
   return (
     <div
       className={`${styles.miniNav} ${
